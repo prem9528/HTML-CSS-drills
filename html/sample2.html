@@ -6,36 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>problem 02</title>
     <style>
-        div {
+        .div1, .div2, .div3 {
   width: 100px;
   height: 100px;
   background-color: black;
   color: white;
 }
+.body1{
+  display: flex;
+  justify-content: space-between;
+}
+.box1 , .box2, .box3{
+  height: 500px;
+}
+.box2{
+  display: flex;
+  align-items: center;
+}
+.box3{
+  display: flex;
+  align-items:flex-end;
+}
 
-.div1 {
-		float: left;
-	}
-	.div2 {
-		clear: left;
-		margin: 0 auto;
-	}
-	.div3 {
-		float: right;
-	}
 </style>
 </head>
-<body>
+<body class="body1">
 
-    <div class="div1">
+    <div class="box1">
+      <div class="div1">
         div1
       </div>
-      
-      <div class="div2">
-        div2
+    </div>
+      <div class="box2">
+        <div class="div2">
+          div2
+        </div>
       </div>
-      <div class="div3"> div3
-         </div>
+      <div class="box3"><div class="div3"> div3
+      </div></div>
       
     
 </body>

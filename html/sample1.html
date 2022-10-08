@@ -6,38 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>problem 01</title>
     <style>
-        div {
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  color: white;
-}
+      .container{
+        display: flex;
+        justify-content: space-between;
+      }
+      div{
+        background-color: black;
+        color: white;
+        height: 100px;
+        width: 100px;
+      }
+      .div1{
+        flex: 1;
+      }
+      .main{
+        flex: 5;
+        background-color: white;
 
-	.div1 {
-	 	float: left;
-	}
-	.div2 {
-	 	position: absolute;
-	 	right: 210px;
-	}
-	.div3 {
-		position: absolute;
-		right: 0;
-	}
+        display: flex;
+        justify-content: right;
+        gap: 20px;
+
+      }
 
 </style>
 </head>
-<body>
+<body class="container">
+  <div class="div1">
+    div1
+  </div>
 
-    <div class="div1">
-        div1
-      </div>
-      
-      <div class="div2">
-        div2
-      </div>
-      <div class="div3"> div3
-         </div>
+
+  
+  <div class="main">
+    
+    <div class="div2">
+      div2
+    </div>
+    <div class="div3"> div3
+       </div>
+    
+   </div>
       
     
 </body>
